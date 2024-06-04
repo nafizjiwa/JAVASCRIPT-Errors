@@ -12,7 +12,7 @@ The information is found in 2 properties:  </br>
 
 ## Errors returned by the Name property:
 
-|Error Name| Description |
+|Error Name or Type of Error| Description |
 |-------|-------|
 | “EvalError” | An error has occurred in the eval() function (Note: Depreciated in newer versions of JavaScript) |
 | “RangeError” | A number “out of range” has occurred |
@@ -22,7 +22,7 @@ The information is found in 2 properties:  </br>
 | “URIError” | An error in encodeURI() has occurred |
 
 ## Mesages for various errors:
-|Error Name| The Message Provided |
+|Error Name or Type of Error| The Message Provided |
 |-------|-------|
 | RangeError|  invalid array length |
 | |  invalid date|
