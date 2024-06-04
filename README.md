@@ -5,7 +5,7 @@ The errors are caught by a catch block of a try...catch or by a throw statement.
 
 ## The Error Object
 Contains information about the thrown exception. </br>
-Where information? In its 2 properties:  </br>
+The information is found in 2 properties:  </br>
 
 1. `Name` Sets or returns an error name. (Type of Error)  </br>
 2. `Message` Sets or returns an error message. (Description of instance.)  </br>
@@ -25,7 +25,7 @@ Where information? In its 2 properties:  </br>
 |Error Name| The Message Provided |
 |-------|-------|
 | RangeError|  invalid array length |
-|      |  invalid date|
+| |  invalid date|
 | ReferenceError |  “x” is not defined |
 || assignment to undeclared variable “x” |
 | SyntaxError | “x” is a reserved identifier |
