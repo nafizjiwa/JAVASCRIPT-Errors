@@ -10,15 +10,15 @@ Where information? In its 2 properties:  </br>
 1. `Name` Sets or returns an error name. (Type of Error)  </br>
 2. `Message` Sets or returns an error message. (Description of instance.)  </br>
 
-Errors returned by name property:
-|head| head |
+Errors returned by the Name property:
+|Error Name| Description |
 |-------|-------|
-  “EvalError” An error has occurred in the eval() function (Note: Depreciated in newer versions of JavaScript)
-  “RangeError” A number “out of range” has occurred
-  “ReferenceError” An illegal reference has occurred
-  “SyntaxError” A syntax error has occurred
-  “TypeError” A type error has occurred
-  “URIError” An error in encodeURI() has occurred
+| “EvalError” | An error has occurred in the eval() function (Note: Depreciated in newer versions of JavaScript) |
+| “RangeError” | A number “out of range” has occurred |
+|“ReferenceError” | An illegal reference has occurred |
+| “SyntaxError” | A syntax error has occurred |
+| “TypeError” | A type error has occurred |
+| “URIError” | An error in encodeURI() has occurred |
 
 Mesages for various errors:
 
