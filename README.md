@@ -10,7 +10,8 @@ Where information? In its 2 properties:  </br>
 1. `Name` Sets or returns an error name. (Type of Error)  </br>
 2. `Message` Sets or returns an error message. (Description of instance.)  </br>
 
-Errors returned by the Name property:
+## Errors returned by the Name property:
+
 |Error Name| Description |
 |-------|-------|
 | “EvalError” | An error has occurred in the eval() function (Note: Depreciated in newer versions of JavaScript) |
@@ -20,19 +21,22 @@ Errors returned by the Name property:
 | “TypeError” | A type error has occurred |
 | “URIError” | An error in encodeURI() has occurred |
 
-Mesages for various errors:
+## Mesages for various errors:
+|Error Name| The Message Provided |
+|-------|-------|
+| RangeError|  invalid array length |
+|      |  invalid date|
+| ReferenceError |  “x” is not defined |
+|| assignment to undeclared variable “x” |
+| SyntaxError | “x” is a reserved identifier |
+||  a declaration in the head of a for-of loop can’t have an initializer |
+| TypeError |  “x” is not a function |
+||  “x” is read-only |
+| URIError| malformed URI sequence |
 
-RangeError
-  invalid array length
-  invalid date
-ReferenceError
-  “x” is not defined
-  assignment to undeclared variable “x”
-SyntaxError
-  “x” is a reserved identifier
-  a declaration in the head of a for-of loop can’t have an initializer
-TypeError
-  “x” is not a function
-  “x” is read-only
-URIError
-  malformed URI sequence
+
+  
+
+
+
+  
