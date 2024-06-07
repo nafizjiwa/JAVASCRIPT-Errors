@@ -25,7 +25,8 @@ We use try...catch() and a throw statement (Similar to Error() but won't stop pr
       }
       // Prints: This error will get caught
       
-##### // try...catch Throws JS engine (compiler) built-in Errors [Type, Syntax, Reference...]
+##### // try...catch Throws a JS engine (compiler) built-in Errors [Type, Syntax, Reference...]
+###### Built-in Errors are Run-time Errors
 
      try {
            The code can throw built-in errors like syntax, reference, type
