@@ -13,7 +13,7 @@ JavaScript errors are objects. </br>
      throw Error('Something wrong happened/MESSAGE HERE');              //throws error object </br>
            // Error: Something wrong happened</br>
       console.log('This will never run');</br>
-           // Code after the throw statement will not execute</br>
+           // Code after the throw statement will not execute (PROGRAM STOPS RUNNING WITH THROW)</br>
 
 ###### To anticipate and handle errors and allow a program to run:</br>
 We use try...catch() and a throw statement (Similar to Error() but won't stop program). </br>
@@ -54,17 +54,29 @@ The information is found in 2 properties:  </br>
 1. `Name` Sets or returns an error name. (Type of Error)  </br>
 2. `Message` Sets or returns an error message. (Description of instance.)  </br>
 
+
+All error types along with their properties are inherited from the Error object. </br>
+Think of it like a pyramid. </br>
+Error is at the top, followed by the different types of errors, </br>
+then finally by their properties.</br>
+
+| | | Error |  | |
+|-------|-------|------|------|------|
+| “ReferenceError” | “SyntaxError” | “TypeError” | “EvalError” | “URIError” |
+| Type of Errors Properties | Type of Errors Properties | Type of Errors Properties| Type of Errors Properties | Type of Errors Properties |
+
 ## Errors returned by the Name property:
 
 |Error Name or Type of Error| Description | How to fix by Checking | 
 |-------|-------|------|
 | “EvalError” | An error has occurred in the eval() function (Note: Depreciated in newer versions of JavaScript) |
 | “RangeError” | A number “out of range” has occurred | |
-|“ReferenceError” | illegal reference to a variable/ using a variable not in program | Properly declare of variables |
+|“ReferenceError” | Using a variable that doesn't exist | Properly declare of variables or create new |
 || code after Reference Errors will not work|
 | “SyntaxError” | Syntax error a typo creates invalid code| opened/closed brackets, braces, parentheses, semicolons |
-| “TypeError” | An operation done on value of the wrong type | Used a String method on a number/ so use a method for #'s |
+| “TypeError” | Perform an operation on a value of incorrect type | Used a String method on a number/ so use a method for #'s |
 | “URIError” | An error in encodeURI() has occurred | |
+| “Internal” |  | |
 
 ###### “TypeError” example: 
 
@@ -73,6 +85,19 @@ The information is found in 2 properties:  </br>
     //// TYPE ERROR: RE ASSIGNMENT TO A CONSTANT VARIABLE./////
     //// CODE AFTER WILL NOT COMPLETE./////
     console.log('This will never be printed!');
+    
+###### Additional Examples:
+
+    function areaOfCircle(radius) {
+      return pi * radius * radius;
+      // : correct answerReferenceError: pi is not defined
+    }
+    const radius = 3;
+    console.log(areaOfCircle(radius);
+    // : correct answerSyntaxError: missing ) after argument list
+                
+    radius = 5;
+    // : correct answerTypeError: Assignment to constant variable.
  
 ## Mesages for various errors:
 |Error Name or Type of Error| The Message Provided |
