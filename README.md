@@ -5,7 +5,7 @@ JavaScript errors are objects. </br>
 ###### To create errors and send to a user we can use the Error function. <br> 
    It allows us to make an error object with a message that is unique to an error you want to convey! </br>
    
-    console.log(Error('Your password is too weak.'));       //Error(create error objects) { message: 'Your password is too weak.'}
+    console.log(Error('Your password is too weak.'));    //Error(create error objects) { message: 'Your password is too weak.'}
     console.log(new Error('Your password is too weak.'));    //Using new  
 
 ###### However to actually throw an error we must use the throw keyword</br>
