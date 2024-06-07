@@ -18,7 +18,7 @@ The information is found in 2 properties:  </br>
 | “RangeError” | A number “out of range” has occurred | |
 |“ReferenceError” | An illegal reference to a variable | Properly declare of variables | |
 | “SyntaxError” | Syntax error a typo creates invalid code| opened/closed brackets, braces, parentheses, semicolons |
-| “TypeError” | An operation done on value of the wrong type | String method on a number use differnt method |
+| “TypeError” | An operation done on value of the wrong type | Used a String method on a number/ so use a method for #'s |
 | “URIError” | An error in encodeURI() has occurred | |
  
 ## Mesages for various errors:
