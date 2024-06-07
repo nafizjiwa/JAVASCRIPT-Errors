@@ -12,15 +12,15 @@ The information is found in 2 properties:  </br>
 
 ## Errors returned by the Name property:
 
-|Error Name or Type of Error| Description |
-|-------|-------|
+|Error Name or Type of Error| Description | How to fix by Checking | 
+|-------|-------|------|
 | “EvalError” | An error has occurred in the eval() function (Note: Depreciated in newer versions of JavaScript) |
-| “RangeError” | A number “out of range” has occurred |
-|“ReferenceError” | An illegal reference has occurred |
-| “SyntaxError” | A syntax error has occurred |
-| “TypeError” | A type error has occurred |
-| “URIError” | An error in encodeURI() has occurred |
-
+| “RangeError” | A number “out of range” has occurred | |
+|“ReferenceError” | An illegal reference to a variable | Properly declare of variables | |
+| “SyntaxError” | Syntax error a typo creates invalid code| opened/closed brackets, braces, parentheses, semicolons |
+| “TypeError” | type error an operation on a value of the wrong type | used a string method on a number |
+| “URIError” | An error in encodeURI() has occurred | |
+ 
 ## Mesages for various errors:
 |Error Name or Type of Error| The Message Provided |
 |-------|-------|
