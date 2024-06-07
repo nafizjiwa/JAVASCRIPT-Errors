@@ -60,7 +60,7 @@ The information is found in 2 properties:  </br>
 |-------|-------|------|
 | “EvalError” | An error has occurred in the eval() function (Note: Depreciated in newer versions of JavaScript) |
 | “RangeError” | A number “out of range” has occurred | |
-|“ReferenceError” | illegal reference to a variable/ variable or function cannot be found | Properly declare of variables |
+|“ReferenceError” | illegal reference to a variable/ using a variable not in program | Properly declare of variables |
 || code after Reference Errors will not work|
 | “SyntaxError” | Syntax error a typo creates invalid code| opened/closed brackets, braces, parentheses, semicolons |
 | “TypeError” | An operation done on value of the wrong type | Used a String method on a number/ so use a method for #'s |
