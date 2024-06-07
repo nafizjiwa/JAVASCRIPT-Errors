@@ -16,7 +16,7 @@ JavaScript errors are objects. </br>
            // Code after the throw statement will not execute</br>
 
 ###### To anticipate and handle errors and allow a program to run:</br>
-We use try...catch() and a throw statement. </br>
+We use try...catch() and a throw statement (Similar to Error() but won't stop program). </br>
 
       try {                                           //Try block contains code that might throw error
         throw Error('This error will get caught');        //throw an error 
