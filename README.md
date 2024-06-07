@@ -2,19 +2,22 @@
 JavaScript errors are objects. </br>
   Contains properties: Name and message </br>
 
-To create errors and send to a user we can use the Error function. <br> 
+###### To create errors and send to a user we can use the Error function. <br> 
    It allows us to make an error object with a message that is unique to an error you want to convey! </br>
-######    console.log(Error('Your password is too weak.'));         //Error creates an error object message: 'Your password is too weak.'. </br>
-######    console.log(new Error('Your password is too weak.'));    //Using new   </br>
+   
+     console.log(Error('Your password is too weak.'));         //Error creates an error object message: 'Your password is too weak.'. </br>
+     console.log(new Error('Your password is too weak.'));    //Using new   </br>
 
-However to actually throw an error we must use the throw keyword</br>
-######     throw Error('Something wrong happened/MESSAGE HERE');              //throws error object </br>
-######     // Error: Something wrong happened</br>
-######     console.log('This will never run');</br>
-######      Code after the throw statement will not execute</br>
+###### However to actually throw an error we must use the throw keyword</br>
 
-To anticipate and handle errors and allow a program to run:</br>
+     throw Error('Something wrong happened/MESSAGE HERE');              //throws error object </br>
+           // Error: Something wrong happened</br>
+      console.log('This will never run');</br>
+           // Code after the throw statement will not execute</br>
+
+###### To anticipate and handle errors and allow a program to run:</br>
 We use try...catch() and a throw statement. </br>
+
       try {                                           //Try block contains code that might throw error
         throw Error('This error will get caught');        //throw an error 
       } catch (e) {                                  //Catch block catches the error
